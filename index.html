@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">&lt;/&gt; My Portfolio</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#contact" class="resume">Contact Me</a>
+    </header>
+
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+
+            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+
+            <h1>
+                Hello, I'm
+                <br>
+                <span>Swati Vitmal</span>
+            </h1>
+
+            <h2>Aspiring Software Tester</h2>
+
+            <p>
+                Welcome to my personal portfolio website.
+                I love to test, explore and build better software.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">
+                    View My Projects →
+                </a>
+
+                <a href="resume.pdf" class="btn resume-btn" download>Download Resume →</a>
+            </div>
+
+        </div>
+
+
+        <div class="profile">
+            <div class="photo-circle">
+                <img src="images/profile.jpg" alt="My Profile Photo">
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+
+        <h2>About <span>Me</span></h2>
+
+        <p>
+            I am a fresher and passionate about Software Testing.
+            I enjoy learning new technologies, finding bugs and
+            making software more reliable and user-friendly.
+        </p>
+
+        <div class="qualities">
+
+            <div>🎓 Quick Learner</div>
+
+            <div>😊 Positive Attitude</div>
+
+            <div>✨ Adaptable</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Education Section -->
+    <section id="education">
+
+        <h2>My <span>Education</span></h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Education</h3>
+                <p>I recently completed my bachelor degree in computer science from mumbai university.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills">
+
+        <h2>My <span>Skills</span></h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Manual Testing</h3>
+                <p>Software Testing Fundamentals</p>
+            </div>
+
+            <div class="card">
+                <h3>Automation Testing</h3>
+                <p>Selenium WebDriver, Locators, XPath, TestNG/JUnit</p>
+            </div>
+
+            <div class="card">
+                <h3>MYSQL</h3>
+                <p>Database Basics and Queries</p>
+            </div>
+
+            <div class="card">
+                <h3>HTML</h3>
+                <p>Web Page Structure</p>
+            </div>
+
+            <div class="card">
+                <h3>CSS</h3>
+                <p>Web Page Styling</p>
+            </div>
+
+            <div class="card">
+                <h3>Javascript</h3>
+                <p>DOM Manipulation, Events, Functions</p>
+            </div>
+
+            <div class="card">
+                <h3>Python</h3>
+                <p> Data Structures (Lists, Dictionaries), Functions, File Handling, OOPs Basics</p>
+            </div>
+
+            <div class="card">
+                <h3>Core java(Basics)</h3>
+                <p>OOPs Concepts, Data Types, Loops, Exception Handling, Collections</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects">
+
+        <h2>My <span>Projects</span></h2>
+
+        <div class="cards">
+
+            <div class="card project-card">
+
+                <div class="project-icon">💼</div>
+
+                <h3>Online Job Portal</h3>
+
+                <p>
+                    A platform designed to connect job seekers
+                    with recruiters and help users explore
+                    job opportunities.
+                </p>
+
+                <span class="project-tag">Web Development</span>
+
+                <button type="button" class="project-btn"
+onclick="showProject('job')">
+    View Project Details →
+</button>
+            </div>
+
+
+            <div class="card project-card">
+
+                <div class="project-icon">📚</div>
+
+                <h3>Next Gen Learn</h3>
+
+                <p>
+                    An E-learning platform designed to support
+                    online learning and provide an educational
+                    experience for students.
+                </p>
+
+                <span class="project-tag">E-Learning Platform</span>
+
+                <button type="button" class="project-btn"
+onclick="showProject('learn')">
+    View Project Details →
+</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Project Details Section -->
+<section id="project-details" style="display:none;">
+
+    <button class="view-btn" onclick="backToProjects()">
+        ← Back to Projects
+    </button>
+
+    <div id="job-details" style="display:none;">
+
+        <h2>Online <span>Job Portal</span></h2>
+
+        <h3>Project Overview</h3>
+
+        <p>
+            An online platform designed to connect job seekers
+            with recruiters and help users explore job opportunities.
+        </p>
+
+        <h3>Technologies Used</h3>
+
+        <p>HTML, CSS, JavaScript , Python , MYSQL </p>
+
+        <h3>Key Features</h3>
+
+        <ul>
+            <li>User Registration and Login</li>
+            <li>Job Search</li>
+            <li>Job Listings</li>
+            <li>Recruiter Section</li>
+            <li>Candidate Information</li>
+        </ul>
+
+        <h3>Project Screenshots</h3>
+
+        <div class="screenshot-gallery">
+
+            <div>
+                <img src="Screenshots/job1.png"
+                     alt="Job Portal Home Page">
+                <p>Home Page</p>
+            </div>
+
+            <div>
+                <img src="Screenshots/job2.png"
+                     alt="Job Portal Profile Edit">
+                <p>Profile Edit</p>
+            </div>
+
+            <div>
+                <img src="Screenshots/job3.png"
+                     alt="Job Portal Dashboard">
+                <p>Dashboard</p>
+            </div>
+
+            <div>
+                <img src="Screenshots/job4.png"
+                     alt="Job Portal Login">
+                <p>Login Page</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="learn-details" style="display:none;">
+
+        <h2>Next Gen <span>Learn</span></h2>
+
+        <h3>Project Overview</h3>
+
+        <p>
+            Next Gen Learn is an E-learning platform that helps
+            students access learning resources and explore
+            different courses online.
+        </p>
+
+        <h3>Technologies Used</h3>
+
+        <p>HTML, CSS, JavaScript ,PHP , MYSQL , Bootstrap </p>
+
+        <h3>Key Features</h3>
+
+        <ul>
+            <li>User Registration</li>
+            <li>Online Courses</li>
+            <li>Private Messages</li>
+            <li>Dashboard</li>
+            <li>Easy Navigation</li>
+        </ul>
+
+        <h3>Project Screenshots</h3>
+
+        <div class="screenshot-gallery">
+
+            <div>
+                <img src="Screenshots/learn1.png"
+                     alt="Next Gen Learn Home Page">
+                <p>Home Page</p>
+            </div>
+
+            <div>
+                <img src="Screenshots/learn2.png"
+                     alt="Next Gen Learn Courses">
+                <p>Login page</p>
+            </div>
+
+            <div>
+                <img src="Screenshots/learn3.png"
+                     alt="Next Gen Learn Dashboard">
+                <p>Dashboard</p>
+            </div>
+
+            <div>
+                <img src="Screenshots/learn4.png"
+                     alt="Next Gen Learn Enroll History">
+                <p>Enroll History</p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- Certificates Section -->
+    <section id="certificates">
+
+        <h2>My <span>Certificates</span></h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Certificates</h3>
+                <p>QA Automation with Selenium and AI.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+
+        <h2>Contact <span>Me</span></h2>
+
+        <p>
+            I would love to connect and explore opportunities.
+        </p>
+
+        <div class="contact-info">
+
+            <p>Email: swativitmal1245@gmail.com</p>
+
+            <p>Linkedin: 
+                <a href="https://www.linkedin.com/in/swati-vitmal" target="_blank">Visit My Linkedin Profile</a>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 My Portfolio | All Rights Reserved
+        </p>
+
+    </footer>
+
+    <!-- JavaScript -->
+<script>
+
+function showProject(project) {
+
+    document.getElementById("projects").style.display = "none";
+    document.getElementById("project-details").style.display = "block";
+
+    document.getElementById("job-details").style.display = "none";
+    document.getElementById("learn-details").style.display = "none";
+
+    if (project === "job") {
+        document.getElementById("job-details").style.display = "block";
+    }
+
+    else if (project === "learn") {
+        document.getElementById("learn-details").style.display = "block";
+    }
+
+    document.getElementById("project-details").scrollIntoView({
+        behavior: "smooth"
+    });
+
+}
+
+function backToProjects() {
+
+    document.getElementById("project-details").style.display = "none";
+    document.getElementById("projects").style.display = "block";
+
+    document.getElementById("projects").scrollIntoView({
+        behavior: "smooth"
+    });
+
+}
+
+</script>
+
+</body>
+</html>
